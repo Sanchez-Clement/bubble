@@ -1,0 +1,438 @@
+html, body {
+    min-height: 100vh;
+}
+
+#video {
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    position: relative;
+    top: -8px;
+}
+
+#social {
+    position: fixed;
+    top: 10%;
+    right: 5px;
+    z-index: 99999;
+    list-style: none;
+}
+
+#social .icone {
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 50% !important;
+    /*-moz-transition: width 1s, height 1s, -webkit-transform 1s;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    transition: width 1s, height 1s, transform 1s;*/
+}
+
+#social .facebook {
+    background: #3b5998;
+}
+
+#social .twitter {
+    background: #00aced;
+}
+
+#social .youtube {
+    background: #bb0000;
+}
+
+#nav {
+    font-size: 14px;
+    background-color: #272219;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    /*background-image: url('../img/1185.jpg');*/
+    /*background-size : 50%;*/
+    background-color: #E5E5E5;
+    min-height: 100vh;
+}
+
+#nav a {
+    color: white;
+    z-index: 1100;
+}
+
+#nav button {
+    color: white;
+}
+
+#nav .dropdown-menu {
+    background-color: rgb(243, 142, 31);
+}
+
+#nav .dropdown-toggle:hover {
+    text-shadow: 0 1px 0 #EBEBEB;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+    text-shadow: 0 1px 0 #EBEBEB;
+    color: #917222;
+    background: #E5E5E5;
+    background: -moz-linear-gradient(top, #E5E5E5 0%, #C4C4C4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E5E5E5), color-stop(100%, #C4C4C4));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#C4C4C4', GradientType=0);
+    box-shadow: inset 0px -2px 4px #9C9797;
+    -webkit-box-shadow: inset 0px -2px 4px #9C9797;
+    -moz-box-shadow: inset 0px -2px 4px #9C9797;
+    -o-box-shadow: inset 0px -2px 4px #9C9797;
+
+}
+
+#nav .dropdown-menu a:hover {
+    color: black;
+    text-shadow: 0 1px 0 #EBEBEB;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+    text-shadow: 0 1px 0 #EBEBEB;
+    /*color: #917222;*/
+    background: #E5E5E5;
+    background: -moz-linear-gradient(top, #E5E5E5 0%, #C4C4C4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E5E5E5), color-stop(100%, #C4C4C4));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#C4C4C4', GradientType=0);
+    box-shadow: inset 0px -2px 4px #9C9797;
+    -webkit-box-shadow: inset 0px -2px 4px #9C9797;
+    -moz-box-shadow: inset 0px -2px 4px #9C9797;
+    -o-box-shadow: inset 0px -2px 4px #9C9797;
+}
+
+#julia .grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    /*max-width: 1000px;*/
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+#julia .grid figure {
+    position: relative;
+    /*float: left;*/
+    overflow: hidden;
+    margin-right: -50px;
+    margin-left: -50px;
+    /* margin: 0 0 10px 0; */
+
+    padding: 0;
+    /*min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;*/
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+#julia .grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+#julia .grid figure figcaption {
+    padding: 1em 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#julia .grid figure figcaption::before,
+#julia .grid figure figcaption::after {
+    pointer-events: none;
+}
+
+#julia .grid figure figcaption,
+#julia .grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+#julia .grid figure figcaption > a {
+    z-index: 100;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+#julia .grid figure h2 {
+
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#julia .grid figure h2 span {
+    font-weight: 800;
+}
+
+#julia .grid figure h2,
+#julia .grid figure p {
+    margin: 0;
+}
+
+#julia .grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+
+}
+
+/* Individual effects */
+
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+
+#julia figure.effect-julia {
+    background: #2f3238;
+}
+
+#julia images
+#julia figure.effect-julia img {
+    max-width: none;
+    height: 400px;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#julia figure.effect-julia figcaption {
+    text-align: left;
+}
+
+#julia figure.effect-julia h2 {
+    position: relative;
+    padding: 0.5em 2em;
+}
+
+#julia figure.effect-julia p {
+    display: inline-block;
+    margin: 0.25em 0 0.25em;
+    padding: 0.4em 1em;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2f3238;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 0.8em;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-400px, 0, 0);
+    transform: translate3d(-400px, 0, 0);
+}
+
+#julia figure.effect-julia p:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+#julia figure.effect-julia p:nth-of-type(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+#julia figure.effect-julia p:nth-of-type(3) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+#julia figure.effect-julia:hover p:first-child {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+#julia figure.effect-julia:hover p:nth-of-type(2) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+#julia figure.effect-julia:hover p:nth-of-type(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+#julia figure.effect-julia:hover img {
+    opacity: 0.4;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+#julia figure.effect-julia:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#julia .commentaire p {
+    display: block;
+}
+
+/* Media queries */
+/*@media screen and (max-width: 50em) {
+ #julia .content {
+   padding: 0 10px;
+   text-align: center;
+ }
+ #julia .grid figure {
+   display: inline-block;
+   float: none;
+   margin: 10px auto;
+   width: 100%;
+ }
+}*/
+
+#content .carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+
+
+/* The indicators */
+#content .carousel-indicators {
+
+    top: auto;
+    bottom: -10px;
+
+}
+/* The colour of the indicators */
+#content .carousel-indicators li {
+    background: #cecece;
+}
+#content .carousel-indicators .active {
+    background: #428bca;
+}
+
+@media screen and (max-width: 1200px) {
+    #julia figure.effect-julia p {
+        font-size: 0.7em;
+    }
+
+    #julia figure.effect-julia h2 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #julia figure.effect-julia p {
+        font-size: 0.5em;
+    }
+
+    #julia figure.effect-julia h2 {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    #julia figure.effect-julia p {
+        font-size: 0.6em;
+    }
+
+    #julia figure.effect-julia h2 {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #julia figure.effect-julia p {
+        font-size: 0.7em;
+    }
+
+    #julia figure.effect-julia h2 {
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #julia figure.effect-julia p {
+        font-size: 0.5em;
+    }
+
+    #julia figure.effect-julia h2 {
+        font-size: 0.8em;
+    }
+
+    #julia figure.effect-julia p:first-child {
+        margin-top: 50px;
+    }
+
+}
+
+/*BUBBLE*/
+
+#bubble, #bubble2 {
+    padding: 0;
+    flex-flow: row;
+
+}
+
+.bubble {
+    /*background-image: url(../img/back2.jpg);
+    background-size: 200px;*/
+    background-color: rgb(243, 142, 31);
+}
+
+#imgbubble {
+    padding: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+    #bubble {
+
+        flex-flow: column;
+    }
+
+    #bubble2 {
+
+        flex-flow: column-reverse;
+    }
+
+}
+#bubble ul, #bubble2 ul {
+    padding: 0;
+}
+#bubble li, #bubble2 li {
+    list-style: none;
+}
+
+#carouselExampleIndicators {
+    padding: 0;
+}
