@@ -1,10 +1,12 @@
 html, body {
     min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #video {
     padding: 0;
     margin: 0;
+    height: 93vh;
 }
 
 #content {
@@ -46,12 +48,16 @@ html, body {
 #social .youtube {
     background: #bb0000;
 }
-
+footer {
+    background-color: #272219;
+    margin :0 !important;
+    color: white;
+}
 #nav {
     font-size: 14px;
     background-color: #272219;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     position: fixed;
     top: 0;
     z-index: 200;
@@ -303,6 +309,7 @@ main {
     display: block;
 }
 
+
 /* Media queries */
 /*@media screen and (max-width: 50em) {
  #julia .content {
@@ -400,6 +407,7 @@ main {
 #bubble, #bubble2 {
     padding: 0;
     flex-flow: row;
+    font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -414,10 +422,14 @@ main {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1218px) {
     #bubble {
 
         flex-flow: column;
+    }
+    #bubble .card, #bubble2 .card {
+display: block;
+
     }
 
     #bubble2 {
